@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nemexis Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nemexis Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- DEV ICONS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <h1>Nemexis</h1>
-  <ul>
-    <li>About</li>
-    <li>Projects</li>
-    <li>Contact</li>
+  <h2 class="logo">Nemexis</h2>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-
   <video autoplay muted loop playsinline class="bg-video">
     <source src="video.mp4" type="video/mp4">
   </video>
@@ -35,16 +40,12 @@
 
   <div class="hero-content">
     <h1>Full-Stack Web Developer</h1>
-    <p>Building modern websites with AI-powered features</p>
-
-    <div class="buttons">
-      <button>View Projects</button>
-      <button class="outline">Contact Me</button>
-    </div>
-
-    <p class="location">📍 Assam, India</p>
+    <p>
+      I build modern, high-performance web applications and AI-powered solutions
+      with clean design and smooth user experience.
+    </p>
+    <button>View Projects</button>
   </div>
-
 </section>
 
 <!-- GRID -->
@@ -53,29 +54,36 @@
 
     <div class="box">
       <h3>About Me</h3>
-      <p>I build AI-powered web apps.</p>
-    </div>
-
-    <div class="box">
-      <h3>AI Skills</h3>
-      <p>Chatbots, AI Agents</p>
+      <p>Passionate developer building scalable web applications.</p>
     </div>
 
     <div class="box">
       <h3>Location</h3>
-      <p>Assam, India</p>
+      <p>Based in Assam, India 🇮🇳. Open to remote work worldwide.</p>
     </div>
 
     <div class="box">
       <h3>Passion</h3>
-      <p>Creating modern products.</p>
+      <p>Creating modern UI, AI tools, and digital products.</p>
     </div>
 
   </div>
 </section>
 
+<!-- SKILLS -->
+<section class="skills-section">
+  <h2>Technologies I Work With</h2>
+  <div class="skills">
+    <i class="devicon-html5-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-python-plain colored"></i>
+    <i class="devicon-github-original"></i>
+  </div>
+</section>
+
 <!-- PROJECTS -->
-<section class="projects">
+<section id="projects" class="projects">
   <h2>My Work</h2>
 
   <div class="slider">
@@ -83,19 +91,19 @@
 
       <div class="slide">
         <h3>Jarvis AI</h3>
-        <p>Voice assistant automation</p>
+        <p>Voice assistant automation system.</p>
         <button class="disabled">Live Soon</button>
       </div>
 
       <div class="slide">
         <h3>AI Chatbot</h3>
-        <p>Smart chatbot system</p>
+        <p>Smart chatbot with AI integration.</p>
         <button class="disabled">Live Soon</button>
       </div>
 
       <div class="slide">
         <h3>Portfolio</h3>
-        <p>Animated website</p>
+        <p>Modern animated developer website.</p>
         <button class="disabled">Live Soon</button>
       </div>
 
@@ -108,34 +116,35 @@
 
 <!-- TESTIMONIALS -->
 <section class="testimonials">
-  <h2>Cheer from my clients</h2>
+  <h2>What people say</h2>
 
   <div class="test-grid">
-
     <div class="card">
-      <p>Great work and clean design.</p>
-      <h4>Rohit Sharma</h4>
+      <p>"Very clean and professional work."</p>
+      <h4>Rahul Sharma</h4>
     </div>
 
     <div class="card">
-      <p>Very professional developer.</p>
-      <h4>Anjali Verma</h4>
+      <p>"Delivered on time with great quality."</p>
+      <h4>Ankit Verma</h4>
     </div>
-
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
-  <h2>Let's Talk</h2>
+<section id="contact" class="contact">
+  <h2>Let's Work Together</h2>
 
   <form>
     <input type="text" placeholder="Full Name">
     <input type="email" placeholder="Email">
     <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
+    <button type="submit">Send</button>
   </form>
 </section>
+
+<!-- LENIS -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.6/bundled/lenis.min.js"></script>
 
 <script src="script.js"></script>
 
