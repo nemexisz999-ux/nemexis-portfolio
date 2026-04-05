@@ -5,148 +5,164 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nemexis Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
-<!-- FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-
-<!-- DEV ICONS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
+<canvas id="stars"></canvas>
+
+<!-- NAV -->
 <nav class="navbar">
   <h2 class="logo">Nemexis</h2>
+
   <ul class="nav-links">
-    <li><a href="#">Home</a></li>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="contact-btn">Contact</a></li>
   </ul>
 </nav>
-
 <!-- HERO -->
-<section class="hero">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="video.mp4" type="video/mp4">
-  </video>
-
-  <div class="overlay"></div>
+<section id="home" class="hero">
 
   <div class="hero-content">
-    <h1>Full-Stack Web Developer</h1>
+    <h1>
+      Full-Stack Developer <br>
+      <span>& AI Builder</span>
+    </h1>
     <p>
-      I build modern, high-performance web applications and AI-powered solutions
-      with clean design and smooth user experience.
+      I build modern websites, AI tools, and intelligent systems that solve real problems.
+      Focused on clean design, performance, and creating things that actually matter.
     </p>
-    <button>View Projects</button>
   </div>
 </section>
 
-<!-- GRID -->
-<section class="grid-section">
-  <div class="grid">
+<!-- ABOUT CARDS -->
+<section id="about" class="section reveal">
+  <h2>About</h2>
 
-    <div class="box">
-      <h3>About Me</h3>
-      <p>Passionate developer building scalable web applications.</p>
+  <div class="about-grid">
+
+    <div class="card">
+      <h3>Hi, I'm Nemexis</h3>
+      <p>I'm a full-stack developer and AI builder focused on creating modern, scalable, and intelligent web applications.</p>
     </div>
 
-    <div class="box">
-      <h3>Location</h3>
-      <p>Based in Assam, India 🇮🇳. Open to remote work worldwide.</p>
+    <div class="card">
+      <h3>What I Build</h3>
+      <p>From clean web interfaces to AI-powered tools and agents, I build products that are fast, functional, and designed for real-world use.</p>
     </div>
 
-    <div class="box">
-      <h3>Passion</h3>
-      <p>Creating modern UI, AI tools, and digital products.</p>
+    <div class="card">
+      <h3>Where I'm Based</h3>
+      <p>Based in Assam, India-open to remote work worldwide.</p>
     </div>
 
-  </div>
-</section>
+    <div class="card">
+      <h3>My Passion</h3>
+      <p>I enjoy turning ideas into real digital products, constantly learning and improving my skills.</p>
+    </div>
 
-<!-- SKILLS -->
-<section class="skills-section">
-  <h2>Technologies I Work With</h2>
-  <div class="skills">
-    <i class="devicon-html5-plain colored"></i>
-    <i class="devicon-css3-plain colored"></i>
-    <i class="devicon-javascript-plain colored"></i>
-    <i class="devicon-python-plain colored"></i>
-    <i class="devicon-github-original"></i>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Let’s build something together.<br><strong>nemexisz999@gmail.com</strong></p>
+    </div>
+
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="projects">
-  <h2>My Work</h2>
+<section id="projects" class="section reveal">
+  <h2>Projects</h2>
 
-  <div class="slider">
-    <div class="slides">
+  <div class="projects">
 
-      <div class="slide">
-        <h3>Jarvis AI</h3>
-        <p>Voice assistant automation system.</p>
-        <button class="disabled">Live Soon</button>
-      </div>
-
-      <div class="slide">
-        <h3>AI Chatbot</h3>
-        <p>Smart chatbot with AI integration.</p>
-        <button class="disabled">Live Soon</button>
-      </div>
-
-      <div class="slide">
-        <h3>Portfolio</h3>
-        <p>Modern animated developer website.</p>
-        <button class="disabled">Live Soon</button>
-      </div>
-
+    <div class="card">
+      <img src="">
+      <h3>Spotify Clone</h3>
+      <p>Modern responsive music UI with smooth experience.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
     </div>
 
-    <button class="prev">←</button>
-    <button class="next">→</button>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?ai">
+      <h3>AI Writing Tool</h3>
+      <p>AI-powered content generator tool.</p>
+      <div class="tags"><span>AI</span><span>JS</span></div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?dashboard">
+      <h3>Task Manager</h3>
+      <p>Clean productivity dashboard.</p>
+      <div class="tags"><span>React</span><span>Node</span></div>
+    </div>
+
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <h2>What people say</h2>
+<!-- REVIEWS -->
+<section class="section reveal">
+  <h2>Client Reviews</h2>
 
-  <div class="test-grid">
-    <div class="card">
-      <p>"Very clean and professional work."</p>
+  <div class="reviews">
+
+    <div class="review">
+      <p>Amazing work, very clean UI and smooth experience.</p>
       <h4>Rahul Sharma</h4>
+      <div class="stars">★★★★★</div>
     </div>
 
-    <div class="card">
-      <p>"Delivered on time with great quality."</p>
+    <div class="review">
+      <p>Delivered exactly what I needed. Professional and reliable.</p>
       <h4>Ankit Verma</h4>
+      <div class="stars">★★★★★</div>
     </div>
+
+    <div class="review">
+      <p>Great communication and fast delivery.</p>
+      <h4>Priya Singh</h4>
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="review">
+      <p>Creative and detail-oriented developer.</p>
+      <h4>Rohan Das</h4>
+      <div class="stars">★★★★★</div>
+    </div>
+
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Let's Work Together</h2>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
 
-  <form>
-    <input type="text" placeholder="Full Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
+    <div class="footer-left">
+      <div class="footer-item"><span>📍</span><p>Silchar, Assam, India</p></div>
+      <div class="footer-item"><span>📞</span><p>Available on request</p></div>
+      <div class="footer-item"><span>✉️</span><p class="email">nemexisz999@gmail.com</p></div>
+    </div>
 
-<!-- LENIS -->
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.6/bundled/lenis.min.js"></script>
+    <div class="footer-right">
+      <h3>About</h3>
+      <p>I build modern web apps and AI tools with clean UI and scalable systems.</p>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
