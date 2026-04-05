@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nemexis Portfolio</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23a855f7'/><text y='.9em' font-size='70' x='15'>N</text></svg>">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">N</div>
+    <div class="preloader-bar"></div>
+  </div>
+</div>
+
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress"></div>
+
+<canvas id="stars"></canvas>
+
+<!-- NAV -->
+<nav class="navbar">
+  <h2 class="logo">Nemexis</h2>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+
+    <div class="open-badge" data-aos="fade-down">
+      <span class="badge-dot"></span> Currently Open to Work
+    </div>
+
+    <h1 data-aos="fade-up" data-aos-delay="100">
+      <span id="typed-text"></span><span class="cursor">|</span>
+    </h1>
+
+    <p data-aos="fade-up" data-aos-delay="200">
+      I build modern websites, AI tools, and intelligent systems that solve real problems.
+      Focused on clean design, performance, and creating things that actually matter.
+    </p>
+
+    <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
+      <a href="#projects" class="btn-primary">See My Work ↓</a>
+      <a href="#contact" class="btn-outline">Hire Me</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2 data-aos="fade-up">About</h2>
+  <div class="about-grid">
+
+    <div class="card" data-aos="fade-up" data-aos-delay="0">
+      <h3>Hi, I'm Nemexis</h3>
+      <p>I'm a full-stack developer and AI builder focused on creating modern, scalable, and intelligent web applications.</p>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <h3>What I Build</h3>
+      <p>From clean web interfaces to AI-powered tools and agents, I build products that are fast, functional, and designed for real-world use.</p>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Where I'm Based</h3>
+      <p>Based in Assam, India — open to remote work worldwide.</p>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <h3>My Passion</h3>
+      <p>I enjoy turning ideas into real digital products, constantly learning and improving my skills.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 data-aos="fade-up">Skills & Tech Stack</h2>
+  <div class="skills-grid">
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="0"><i class="fab fa-html5"></i> HTML5</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="50"><i class="fab fa-css3-alt"></i> CSS3</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-js"></i> JavaScript</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="150"><i class="fab fa-react"></i> React</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-node-js"></i> Node.js</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="250"><i class="fab fa-python"></i> Python</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-database"></i> MongoDB</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="350"><i class="fas fa-brain"></i> LangChain</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-robot"></i> AI / LLMs</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="450"><i class="fab fa-git-alt"></i> Git</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-wind"></i> Tailwind CSS</div>
+    <div class="skill-badge" data-aos="zoom-in" data-aos-delay="550"><i class="fas fa-server"></i> REST APIs</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 data-aos="fade-up">Projects</h2>
+  <div class="projects">
+
+    <div class="card" data-aos="fade-up" data-aos-delay="0">
+      <img src="./images/image1.png" alt="Spotify Clone">
+      <h3>Spotify Clone</h3>
+      <p>Built a pixel-perfect Spotify UI clone to master responsive design and CSS layout techniques. Features a working sidebar, playlist view, and playback controls — all without a framework.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      <div class="links">
+        <a href="https://github.com/nemexisz999-ux" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <img src="./images/image2.png" alt="AI Writing Tool">
+      <h3>AI Writing Tool</h3>
+      <p>Developed an AI-powered content generator that helps users write blogs, emails, and social posts in seconds. Built with a language model API and a clean minimal interface for fast content creation.</p>
+      <div class="tags"><span>AI</span><span>JS</span></div>
+      <div class="links">
+        <a href="https://github.com/nemexisz999-ux" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <img src="./images/image3.png" alt="Task Manager">
+      <h3>Task Manager</h3>
+      <p>Created a full-stack productivity dashboard with task creation, drag-and-drop kanban boards, and real-time updates. Designed to help teams and solo developers stay organized and on track.</p>
+      <div class="tags"><span>React</span><span>Node</span></div>
+      <div class="links">
+        <a href="https://github.com/nemexisz999-ux" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+  <h2 data-aos="fade-up">Client Reviews</h2>
+  <div class="reviews">
+
+    <div class="review" data-aos="fade-up" data-aos-delay="0">
+      <p>"Amazing work, very clean UI and smooth experience."</p>
+      <h4>Rahul Sharma</h4>
+      <span class="review-project">Spotify Clone UI</span>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="review" data-aos="fade-up" data-aos-delay="100">
+      <p>"Delivered exactly what I needed. Professional and reliable."</p>
+      <h4>Ankit Verma</h4>
+      <span class="review-project">AI Writing Tool</span>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="review" data-aos="fade-up" data-aos-delay="200">
+      <p>"Great communication and fast delivery."</p>
+      <h4>Priya Singh</h4>
+      <span class="review-project">Task Manager App</span>
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="review" data-aos="fade-up" data-aos-delay="300">
+      <p>"Creative and detail-oriented developer."</p>
+      <h4>Rohan Das</h4>
+      <span class="review-project">Portfolio Website</span>
+      <div class="stars">★★★★★</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact" class="section">
+  <h2 data-aos="fade-up">Get In Touch</h2>
+  <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
+    <p class="contact-sub">Have a project in mind or want to work together? Send me a message!</p>
+    <form action="https://formspree.io/f/mlgoarjd" method="POST" class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" name="email" placeholder="john@example.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" name="subject" placeholder="Project Inquiry" required>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary submit-btn">
+        Send Message <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <div class="footer-item"><span>📍</span><p>Silchar, Assam, India</p></div>
+      <div class="footer-item"><span>📞</span><p>Available on request</p></div>
+      <div class="footer-item"><span>✉️</span><p class="email">nemexisz999@gmail.com</p></div>
+    </div>
+
+    <div class="footer-right">
+      <h3>About</h3>
+      <p>I build modern web apps and AI tools with clean UI and scalable systems.</p>
+      <div class="socials">
+        <a href="https://github.com/nemexisz999-ux" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nishant-barman-8b5b00355" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/nishanthasnu_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:nemexisz999@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nemexis. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, once: true });</script>
+<script src="script.js"></script>
+</body>
+</html>
